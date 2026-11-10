@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-paper: #faf8f4;
+}
+
+body {
+  background-color: var(--color-paper);
+  /* Soft green and peach glow at the top of the page. */
+  background-image:
+    radial-gradient(60rem 22rem at 15% -6rem, rgb(187 247 208 / 0.55), transparent 70%),
+    radial-gradient(55rem 22rem at 85% -6rem, rgb(254 215 170 / 0.5), transparent 70%);
+  background-repeat: no-repeat;
+  color: #171717;
+}
+
+.card {
+  @apply rounded-2xl border border-black/5 bg-white shadow-[0_1px_2px_rgb(0_0_0/0.04),0_8px_24px_-12px_rgb(0_0_0/0.12)];
+}
